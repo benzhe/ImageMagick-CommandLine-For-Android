@@ -66,7 +66,9 @@
 #endif
 
 /* Define if you have FFTW library */
-/* #undef FFTW_DELEGATE */
+#ifndef MAGICKCORE_FFTW_DELEGATE
+#define MAGICKCORE_FFTW_DELEGATE 1
+#endif
 
 /* filter subdirectory. */
 #ifndef MAGICKCORE_FILTER_DIRNAME
@@ -495,9 +497,7 @@
 /* #undef HAVE_POSIX_MADVISE */
 
 /* Define to 1 if you have the `posix_memalign' function. */
-#ifndef MAGICKCORE_HAVE_POSIX_MEMALIGN
-#define MAGICKCORE_HAVE_POSIX_MEMALIGN 1
-#endif
+/* #undef HAVE_POSIX_MEMALIGN */
 
 /* Define to 1 if you have the `posix_spawnp' function. */
 /* #undef HAVE_POSIX_SPAWNP */
@@ -1152,7 +1152,9 @@
 /* #undef PANGO_DELEGATE */
 
 /* Define if you have PNG library */
-/* #undef PNG_DELEGATE */
+#ifndef MAGICKCORE_PNG_DELEGATE
+#define MAGICKCORE_PNG_DELEGATE 1
+#endif
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

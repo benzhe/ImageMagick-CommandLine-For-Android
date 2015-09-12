@@ -7,17 +7,17 @@
 ]>
 <configuremap>
   <configure name="CC" value="arm-linux-androideabi-gcc -std=gnu99 -std=gnu99"/>
-  <configure name="CFLAGS" value="    -g -O2 -Wall -fexceptions  -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="CFLAGS" value="-I/home/ben/Desktop/ImageMagick-6.9.1-10/png/libpng16   -I/home/ben/Desktop/ImageMagick-6.9.1-10/fftw       -g -O2 -Wall -fexceptions  -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
   <configure name="CODER_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib/ImageMagick-6.9.1/modules-Q16/coders"/>
   <configure name="CONFIGURE_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/etc/ImageMagick-6/"/>
-  <configure name="CONFIGURE" value="./configure  '--host=arm-linux-androideabi' '--disable-shared' '--disable-opencl' '--disable-largefile' '--without-perl' '--without-x' '--disable-openmp' '--without-bzlib' '--without-freetype' '--without-rsvg' '--enable-delegate-build' '--without-png' '--prefix=/home/ben/Desktop/ImageMagick-6.9.1-10/build-out' 'host_alias=arm-linux-androideabi'"/>
+  <configure name="CONFIGURE" value="./configure  '--host=arm-linux-androideabi' '--prefix=/home/ben/Desktop/ImageMagick-6.9.1-10/build-out' '--disable-shared' '--disable-opencl' '--disable-largefile' '--without-perl' '--without-x' '--disable-openmp' '--without-bzlib' '--without-freetype' '--without-rsvg' '--enable-delegate-build' 'host_alias=arm-linux-androideabi' 'PKG_CONFIG_PATH=/home/ben/Desktop/ImageMagick-6.9.1-10/fftw/pkgconfig:/home/ben/Desktop/ImageMagick-6.9.1-10/png/pkgconfig'"/>
   <configure name="COPYRIGHT" value="Copyright (C) 1999-2015 ImageMagick Studio LLC"/>
   <configure name="CPPFLAGS" value="-I/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/include/ImageMagick-6"/>
   <configure name="CXXFLAGS" value="-g -O2 "/>
   <configure name="CXX" value="arm-linux-androideabi-g++"/>
   <configure name="DEFS" value="-DHAVE_CONFIG_H"/>
-  <configure name="DELEGATES" value="mpeg jpeg ps zlib"/>
-  <configure name="DISTCHECK_CONFIG_FLAGS" value=" --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-bzlib=no  --with-autotrace=no  --with-freetype=no  --with-gslib=no  --with-fontpath=  --with-png=no  --with-rsvg=no  --with-perl=no "/>
+  <configure name="DELEGATES" value="mpeg fftw jng jpeg png ps zlib"/>
+  <configure name="DISTCHECK_CONFIG_FLAGS" value=" --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-bzlib=no  --with-autotrace=no  --with-freetype=no  --with-gslib=no  --with-fontpath=  --with-rsvg=no  --with-perl=no "/>
   <configure name="DOCUMENTATION_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/share/doc/ImageMagick-6"/>
   <configure name="EXEC-PREFIX" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out"/>
   <configure name="EXECUTABLE_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/bin"/>
@@ -25,16 +25,16 @@
   <configure name="FILTER_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib/ImageMagick-6.9.1/modules-Q16/filters"/>
   <configure name="HOST" value="arm-unknown-linux-androideabi"/>
   <configure name="INCLUDE_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/include/ImageMagick-6"/>
-  <configure name="LDFLAGS" value="-L/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib  -L/home/ben/Desktop/ImageMagick-6.9.1-10/fftw -L/home/ben/Desktop/ImageMagick-6.9.1-10/jpeg -L/home/ben/Desktop/ImageMagick-6.9.1-10/magick -L/home/ben/Desktop/ImageMagick-6.9.1-10/wand"/>
+  <configure name="LDFLAGS" value="-L/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib  -L/home/ben/Desktop/ImageMagick-6.9.1-10/fftw -L/home/ben/Desktop/ImageMagick-6.9.1-10/jpeg -L/home/ben/Desktop/ImageMagick-6.9.1-10/magick -L/home/ben/Desktop/ImageMagick-6.9.1-10/png -L/home/ben/Desktop/ImageMagick-6.9.1-10/wand"/>
   <configure name="LIBRARY_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib/ImageMagick-6.9.1"/>
-  <configure name="LIBS" value="     -ljpeg                        -lz    -lm     "/>
+  <configure name="LIBS" value="     -ljpeg   -L/home/ben/Desktop/ImageMagick-6.9.1-10/png -lpng16     -L/home/ben/Desktop/ImageMagick-6.9.1-10/fftw -lfftw3                    -lz    -lm     "/>
   <configure name="LIB_VERSION_NUMBER" value="6,9,1,10"/>
   <configure name="LIB_VERSION" value="0x691"/>
   <configure name="NAME" value="ImageMagick"/>
   <configure name="PCFLAGS" value="-DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
   <configure name="PREFIX" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out"/>
   <configure name="QuantumDepth" value="16"/>
-  <configure name="RELEASE_DATE" value="2015-09-01"/>
+  <configure name="RELEASE_DATE" value="2015-09-12"/>
   <configure name="SHAREARCH_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib/ImageMagick-6.9.1/config-Q16"/>
   <configure name="SHARE_PATH" value="/home/ben/Desktop/ImageMagick-6.9.1-10/build-out/share/ImageMagick-6"/>
   <configure name="SVN_REVISION" value="19269" />

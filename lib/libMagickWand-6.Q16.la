@@ -17,7 +17,7 @@ old_library='libMagickWand-6.Q16.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/home/ben/Desktop/ImageMagick-6.9.1-10/fftw -L/home/ben/Desktop/ImageMagick-6.9.1-10/jpeg -L/home/ben/Desktop/ImageMagick-6.9.1-10/magick -L/home/ben/Desktop/ImageMagick-6.9.1-10/wand /home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib/libMagickCore-6.Q16.la /home/ben/Desktop/ImageMagick-6.9.1-10/jpeg/libjpeg.la -lz -lm'
+dependency_libs=' -L/home/ben/Desktop/ImageMagick-6.9.1-10/fftw -L/home/ben/Desktop/ImageMagick-6.9.1-10/jpeg -L/home/ben/Desktop/ImageMagick-6.9.1-10/magick -L/home/ben/Desktop/ImageMagick-6.9.1-10/png -L/home/ben/Desktop/ImageMagick-6.9.1-10/wand /home/ben/Desktop/ImageMagick-6.9.1-10/build-out/lib/libMagickCore-6.Q16.la /home/ben/Desktop/ImageMagick-6.9.1-10/jpeg/libjpeg.la /home/ben/Desktop/ImageMagick-6.9.1-10/png/libpng16.la /home/ben/Desktop/ImageMagick-6.9.1-10/fftw/libfftw3.la -lz -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

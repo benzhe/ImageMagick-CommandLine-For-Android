@@ -9,5 +9,5 @@ Name: ImageMagick
 Description: ImageMagick - Convert, Edit, and Compose Images (ABI Q16)
 Version: 6.9.1
 Libs: -L${libdir} -l${libname}
-Libs.private: -L${libdir} -l${libname}      -ljpeg                        -lz    -lm      -lm
+Libs.private: -L${libdir} -l${libname}      -ljpeg   -L/home/ben/Desktop/ImageMagick-6.9.1-10/png -lpng16     -L/home/ben/Desktop/ImageMagick-6.9.1-10/fftw -lfftw3                    -lz    -lm      -lm
 Cflags:  -I${includearchdir} -I${includedir} -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
